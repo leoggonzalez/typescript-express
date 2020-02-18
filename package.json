@@ -8,12 +8,25 @@
     "body-parser": "^1.19.0",
     "concurrently": "^5.1.0",
     "cookie-session": "^1.4.0",
+    "eslint-plugin-prettier": "^3.1.2",
     "express": "^4.17.1",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "tslint": "^6.0.0",
+    "typescript": "^3.7.5"
   },
   "scripts": {
     "start:build": "tsc -w",
     "start:run": "nodemon build/index.js",
-    "start": "concurrently npm:start:*"
+    "start": "concurrently npm:start:*",
+    "lint": "yarn lint:types && yarn lint:style",
+    "lint:types": "tsc --noEmit",
+    "lint:style": "eslint src/*.ts"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.20.0",
+    "@typescript-eslint/parser": "^2.20.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1"
   }
 }
