@@ -9,7 +9,7 @@
     "concurrently": "^5.1.0",
     "cookie-session": "^1.4.0",
     "eslint-plugin-prettier": "^3.1.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "nodemon": "^2.0.2",
     "reflect-metadata": "^0.1.13",
     "tslint": "^6.0.0",
